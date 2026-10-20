@@ -1,0 +1,178 @@
+/* Read-only companion styles. Original layout rules remain in assets/basics.css. */
+:root{color-scheme:dark;}
+button{cursor:pointer}
+.home-jiggle-bar,.app-icon__delete,.app-page-break{display:none!important}
+.home-screen .app-grid{overflow-y:auto;touch-action:pan-y;overscroll-behavior:contain;scrollbar-width:none;min-height:0}
+.home-screen .app-grid::-webkit-scrollbar{display:none}
+.home-screen .app-icon{touch-action:manipulation}
+.home-screen .app-icon[hidden]{display:none!important}
+.home-screen .home-indicator{cursor:pointer;}
+.ro-screen{color:#121212!important;}
+.ro-screen .phone-status-bar{flex:0 0 auto;height:44px;min-height:44px;position:relative;z-index:2;top:0;padding-top:12px;}
+.ro-screen .phone-status-bar__time{color:inherit}
+.ro-screen .phone-status-bar__icons svg rect[fill="#fff"],.ro-screen .phone-status-bar__icons svg path[fill="#fff"]{fill:currentColor}
+.ro-screen .phone-status-bar__icons svg path[stroke="#fff"]{stroke:currentColor}
+.ro-root{min-height:0;flex:1;display:flex;flex-direction:column;overflow:hidden}
+.ro-light{background:#f9f9fb!important;color:#111!important}
+.ro-white{background:#fff!important}
+.ro-kakao{background:#f8f8f8!important}
+.ro-header{flex:0 0 auto;min-height:53px;display:flex;gap:12px;align-items:center;padding:8px 16px;border-bottom:1px solid rgba(30,30,30,.07);background:inherit}
+.ro-header b{font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ro-header .ro-back{flex:0 0 auto;font-size:30px;line-height:1;border:none;background:none;color:#1687f8;padding:2px 6px 4px 0}
+.ro-header .ro-close{margin-left:auto;border:none;background:none;color:#1687f8;font-size:14px}
+.ro-scroll{min-height:0;flex:1;overflow:auto;overscroll-behavior-y:contain;scrollbar-width:none}
+.ro-scroll::-webkit-scrollbar{display:none}
+.ro-empty{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:180px;padding:36px 20px;color:#92939a;text-align:center;line-height:1.5;font-size:14px;gap:8px}
+.ro-empty .ro-empty-icon{font-size:33px;opacity:.65}
+.ro-cell{padding:13px 16px;border-bottom:1px solid #ececf0;display:flex;align-items:center;gap:12px;background:#fff;width:100%;text-align:left;border-left:0;border-right:0;border-top:0;color:#111}
+.ro-cell .ro-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.ro-cell .ro-main strong{font-size:15px;font-weight:650}
+.ro-cell .ro-main small{font-size:12px;color:#92929c;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ro-cell .ro-chevron{color:#b3b3bd}
+.ro-avatar{width:50px;height:50px;display:flex;flex:0 0 auto;align-items:center;justify-content:center;background:linear-gradient(140deg,#8baacb,#7e8cba);color:white;font-size:21px;border-radius:50%;overflow:hidden}
+.ro-avatar img{width:100%;height:100%;object-fit:cover}
+.ro-thread{background:#fff;display:flex;flex-direction:column;flex:1;min-height:0}
+.ro-thread .ro-scroll{padding:18px 14px 26px}
+.ro-day{text-align:center;color:#93949b;font-size:11px;font-weight:500;padding:12px 0 20px}
+.ro-bubble-row{display:flex;margin-bottom:14px;align-items:flex-end;gap:7px}
+.ro-bubble-row.in{justify-content:flex-start}.ro-bubble-row.out{justify-content:flex-end}
+.ro-bubble{border-radius:17px 17px 17px 5px;background:#e9e9eb;color:#101012;padding:10px 13px;max-width:78%;white-space:pre-wrap;font-size:15px;line-height:1.5;word-break:break-word}
+.ro-bubble-row.out .ro-bubble{background:#1588fb;color:white;border-radius:17px 17px 5px 17px}
+.ro-bubble-row time{font-size:10px;color:#a2a2a7}
+.ro-composer-disabled{display:flex;align-items:center;justify-content:center;min-height:54px;color:#9b9ba3;font-size:12px;border-top:1px solid #eee;background:#fafafa}
+.ro-kakao .ro-header{background:#fff}
+.ro-kakao .ro-cell{background:transparent}
+.ro-tabs{display:flex;background:#fff;border-bottom:1px solid #e9e9ef;flex:0 0 auto}
+.ro-tabs button{flex:1;border:0;background:none;padding:14px 0;font-size:14px;color:#8d8d98}
+.ro-tabs button.sel{color:#111;font-weight:700;border-bottom:2px solid #121212}
+.ro-contact-detail{padding:32px 20px;text-align:center;background:white;display:flex;align-items:center;flex-direction:column;gap:14px}
+.ro-contact-detail h2{font-size:24px}
+.ro-pill{border-radius:16px;background:#f2f2f7;padding:16px;margin:12px 16px;display:flex;justify-content:space-between;font-size:15px}
+.ro-browserbar{border-radius:13px;background:#f2f2f7;padding:11px;margin:14px;color:#84848c;text-align:center;font-size:14px}
+.ro-image-overlay{position:absolute;inset:0;background:rgba(0,0,0,.97);z-index:100;display:flex;align-items:center;justify-content:center}
+.ro-image-overlay[hidden]{display:none}.ro-image-overlay img{max-width:100%;max-height:86%;object-fit:contain}
+.ro-image-overlay button{position:absolute;top:22px;right:22px;z-index:2;border:0;background:#333;color:white;border-radius:50%;height:36px;width:36px;font-size:22px}
+/* Twitter: reuse styling and naming of the supplied basics.css. */
+#twitterApp{color:#e7e9ea!important;background:#000!important}
+#twitterApp .tw-root{color:#e7e9ea}
+#twitterApp .phone-status-bar{background:#000}
+#twitterApp .tw-top{min-height:52px}
+#twitterApp .tw-t{cursor:pointer}
+#twitterApp .tw-t .tw-av{cursor:pointer}
+#twitterApp .tw-t button{cursor:pointer}
+#twitterApp .tw-topbutton{background:transparent;color:#fff;border:0;font-size:26px;line-height:1;width:34px;height:34px}
+#twitterApp .tw-img{max-height:430px;object-fit:cover;cursor:zoom-in}
+#twitterApp .tw-nav{padding-bottom:max(22px,env(safe-area-inset-bottom));}
+#twitterApp .tw-nav button{min-height:24px;width:46px;display:flex;justify-content:center;align-items:center;border:0;background:none;color:#73787d;font-size:22px}
+#twitterApp .tw-nav button.on{color:white}
+#twitterApp .tw-nav button svg{height:24px;width:24px}
+#twitterApp .tw-click{cursor:pointer}
+#twitterApp .tw-note{color:#7d8186;font-size:12px;line-height:1.5;padding:12px 16px}
+#twitterApp .tw-time{padding:14px 16px;color:#71767b;font-size:12px;border-bottom:1px solid #2f3336}
+#twitterApp .tw-bubble-label{padding:10px 16px;color:#777;font-size:13px}
+#twitterApp .tw-root .ro-empty{color:#71767b}
+#twitterApp .tw-h button{background:none;border:0;color:inherit;padding:0;font-size:inherit;text-align:left}
+#twitterApp .tw-h button:focus-visible{text-decoration:underline}
+#twitterApp .tw-a button{pointer-events:none;cursor:default}
+#twitterApp .tw-av{background:linear-gradient(135deg,#444c67,#29313b)}
+#twitterApp .tw-profile-cover{height:120px;background:linear-gradient(135deg,#555e87,#2d3749)}
+#twitterApp .tw-profile-meta{padding:0 16px 16px;border-bottom:1px solid #2f3336}
+#twitterApp .tw-profile-meta .tw-av{margin-top:-35px}
+#twitterApp .tw-profile-meta h2{font-size:21px;margin:8px 0 1px}
+#twitterApp .tw-profile-meta p{font-size:14px;line-height:1.5;margin:10px 0}
+#twitterApp .tw-profile-meta small{color:#71767b}
+#twitterApp .tw-searchfield{background:#202327;border:0;color:#fff;width:100%;border-radius:100px;padding:11px 14px;font-size:15px}
+/* Instagram: original black instagram layout. */
+#instagramApp{background:#000!important;color:#fff!important}
+#instagramApp .phone-status-bar{background:#000}
+#instagramApp .ig-root{color:#fff}
+#instagramApp .ig-nav{padding-bottom:max(22px,env(safe-area-inset-bottom));}
+#instagramApp .ig-nav button{border:0;background:none;font-size:24px;color:#fff}
+#instagramApp .ig-profile{padding:20px;display:flex;align-items:center;gap:20px}
+#instagramApp .ig-profile-meta strong{display:block;font-size:16px}
+#instagramApp .ig-profile-meta small{color:#999}
+#instagramApp .ig-bio{padding:0 20px 20px;border-bottom:1px solid #252525;font-size:14px}
+.ro-bottom-home{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:134px;height:19px;z-index:60;border:none;background:transparent;padding:0;touch-action:pan-y}
+.ro-bottom-home::after{content:'';display:block;width:134px;height:5px;background:#e9e9ed;border-radius:100px;margin-top:7px}
+.ro-bottom-home.dark::after{background:#fff}
+@media (min-width:680px){
+  /* Original site uses full browser width. Optional comfortable centered portrait on desktop. */
+  body{background:#18191c!important}
+  .stage{display:flex;justify-content:center;align-items:center}
+  .phone{width:min(100vw,440px);height:min(100dvh,920px);border-radius:30px;box-shadow:0 25px 75px rgba(0,0,0,.55)}
+}
+@media (max-height:620px){.home-screen .app-grid{gap:12px 0;padding-top:12px}.home-screen .app-icon__glyph{height:49px;width:49px}}
+/* Respect the exported light-mode setting: the source CSS has iPhone light overrides. */
+.phone:not(.dark-mode) #twitterApp{color:#0f1419!important;background:#fff!important}
+.phone:not(.dark-mode) #twitterApp .tw-root{color:#0f1419;background:#fff!important}
+.phone:not(.dark-mode) #twitterApp .phone-status-bar{background:#fff}
+.phone:not(.dark-mode) #twitterApp .tw-topbutton{color:#0f1419}
+.phone:not(.dark-mode) #twitterApp .tw-nav{background:#fff}
+.phone:not(.dark-mode) #twitterApp .tw-nav button{color:#536471}
+.phone:not(.dark-mode) #twitterApp .tw-nav button.on{color:#0f1419}
+.phone:not(.dark-mode) #twitterApp .tw-bubble-label{color:#536471}
+.phone:not(.dark-mode) #twitterApp .tw-profile-meta{border-bottom-color:#eff3f4}
+.phone:not(.dark-mode) #twitterApp .tw-time{color:#536471;border-bottom-color:#eff3f4}
+.phone:not(.dark-mode) #twitterApp .tw-h button{color:#0f1419}
+.phone:not(.dark-mode) #twitterApp .tw-note{color:#536471}
+.phone:not(.dark-mode) #twitterApp .tw-searchfield{background:#eff3f4;color:#0f1419}
+.phone:not(.dark-mode) #twitterApp .tw-row{background:#fff!important;color:#0f1419!important}
+.phone:not(.dark-mode) #twitterApp .tw-root .ro-empty{color:#536471}
+.phone:not(.dark-mode) #instagramApp{background:#fff!important;color:#262626!important}
+.phone:not(.dark-mode) #instagramApp .ig-root{color:#262626}
+.phone:not(.dark-mode) #instagramApp .phone-status-bar{background:#fff}
+.phone:not(.dark-mode) #instagramApp .ig-nav button{color:#262626}
+.phone:not(.dark-mode) #instagramApp .ig-bio{border-bottom-color:#dbdbdb}
+
+/* X feed — faithfully sized to the supplied 2026-10-20 two-phone screenshot. */
+#twitterApp .phone-status-bar{background:#fff;}
+#twitterApp .status-dnd-icon,#twitterApp .status-airplane-icon{display:none!important}
+#twitterApp .phone-status-bar__icons{gap:5px;}
+#twitterApp .tw-ro-top{height:52px;min-height:52px;grid-template-columns:44px 1fr 44px; padding:4px 16px;box-sizing:border-box;background:#fff;color:#0f1419;}
+#twitterApp .tw-ro-top .tw-ro-avatar-btn{border:0;width:34px;height:34px;display:flex;justify-content:center;align-items:center;}
+#twitterApp .tw-ro-top .tw-ro-avatar-btn .tw-av{width:32px;height:32px;font-size:19px;}
+#twitterApp .tw-ro-x{display:flex;align-items:center;justify-content:center;}
+#twitterApp .tw-ro-x svg{width:27px;height:27px;}
+#twitterApp .tw-ro-title{font-size:17px;line-height:1.2;}
+#twitterApp .tw-ro-tabs{height:47px;min-height:47px; background:#fff;}
+#twitterApp .tw-ro-tabs button{height:47px;padding:0; font-size:15px;display:flex;justify-content:center;align-items:flex-end;font-weight:650;}
+#twitterApp .tw-ro-tabs button span{height:100%;display:flex;align-items:center;justify-content:center;padding:0 0 2px;box-sizing:border-box;border-bottom:4px solid transparent;min-width:28px;}
+#twitterApp .tw-ro-tabs button.on span{border-bottom-color:#1d9bf0;}
+#twitterApp .tw-ro-feed{background:#fff;overscroll-behavior-y:contain;}
+#twitterApp .tw-ro-post{padding:11px 15px 10px;gap:10px; border-color:#eff3f4;background:#fff;color:#0f1419; cursor:default;}
+#twitterApp .tw-ro-post-avatar{flex:0 0 40px;height:40px;align-self:flex-start;}
+#twitterApp .tw-ro-post-avatar .tw-av{width:40px;height:40px;font-size:20px;}
+#twitterApp .tw-ro-post-header{display:flex;align-items:baseline;justify-content:flex-start;white-space:nowrap;gap:5px;font-size:15px;max-width:100%;min-width:0;}
+#twitterApp .tw-ro-post-header .tw-ro-name{flex:0 1 auto;min-width:0;max-width:58%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:15px;font-weight:750;color:#0f1419;line-height:1.36;}
+#twitterApp .tw-ro-post-header .tw-ro-name b{font-weight:750;}
+#twitterApp .tw-ro-post-header .tw-ro-meta{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#536471;font-size:14px;line-height:1.3;}
+#twitterApp .tw-ro-post-header .tw-ro-more{flex:0 0 23px;align-self:center; margin-left:auto;min-height:20px; border:none;background:none;color:#536471;padding:0;display:flex;align-items:center;justify-content:flex-end;}
+#twitterApp .tw-ro-more svg{width:18px;height:18px;}
+#twitterApp .tw-ro-post .tw-x{font-size:15px;line-height:1.36;margin-top:1px;word-break:break-word;white-space:normal;}
+#twitterApp .tw-ro-post .tw-x[data-act]{cursor:pointer;}
+#twitterApp .tw-ro-actions{max-width:none;width:100%;margin-top:12px;margin-bottom:0;gap:5px;color:#536471;display:flex;align-items:center;justify-content:space-between;min-height:19px;}
+#twitterApp .tw-ro-action{display:inline-flex;align-items:center;justify-content:flex-start;gap:7px;min-width:22px;font-size:13px;}
+#twitterApp .tw-ro-action svg{width:20px;height:20px;display:block;}
+#twitterApp .tw-ro-action i{font-size:12px;font-style:normal;color:#536471;}
+#twitterApp .tw-ro-post .tw-img{width:100%;margin-top:12px;border-radius:14px;max-height:none;aspect-ratio:auto;object-fit:contain;border:1px solid #cfd9de;}
+#twitterApp .tw-ro-post .tw-ro-multi{display:grid;gap:2px;border-radius:14px;overflow:hidden;aspect-ratio:16/9;margin-top:10px;}
+#twitterApp .tw-ro-post .tw-ro-multi img{width:100%;height:100%;margin:0;object-fit:cover;min-width:0;min-height:0;border:0;border-radius:0;aspect-ratio:auto;}
+#twitterApp .tw-ro-post .tw-ro-multi.n2,#twitterApp .tw-ro-post .tw-ro-multi.n3,#twitterApp .tw-ro-post .tw-ro-multi.n4{grid-template-columns:1fr 1fr;}
+#twitterApp .tw-ro-post .tw-ro-multi.n3,#twitterApp .tw-ro-post .tw-ro-multi.n4{grid-template-rows:1fr 1fr;}
+#twitterApp .tw-ro-post .tw-ro-multi.n3 img:first-child{grid-row:1 / 3;}
+#twitterApp .tw-ro-thread{border-bottom:1px solid #eff3f4;position:relative;}
+#twitterApp .tw-ro-thread .tw-ro-post{border-bottom:0;}
+#twitterApp .tw-ro-thread .tw-ro-thread-first{padding-bottom:0;}
+#twitterApp .tw-ro-thread .tw-ro-thread-last{padding-top:7px;}
+#twitterApp .tw-ro-thread .tw-ro-thread-first:after{content:'';position:absolute;z-index:0;left:34px;top:56px;bottom:0px;width:2px;background:#cfd9de;pointer-events:none;}
+#twitterApp .tw-ro-dots{margin-left:15px;width:40px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;color:#536471;font-size:13px;line-height:7px;padding:5px 0;position:relative;height:30px;}
+#twitterApp .tw-ro-dots span{position:relative;z-index:1;background:#fff;padding:0 5px;}
+#twitterApp .tw-ro-nav{height:58px;min-height:58px;box-sizing:border-box; padding:8px 6px 17px;border-top:1px solid #eff3f4;background:#fff;display:flex;justify-content:space-around;align-items:center;}
+#twitterApp .tw-ro-nav button{height:37px;min-height:37px;width:54px;display:flex;align-items:center;justify-content:center;color:#536471;}
+#twitterApp .tw-ro-nav button svg{width:25px;height:25px;}
+#twitterApp .tw-ro-nav button.on{color:#0f1419;}
+#twitterApp .tw-ro-nav button:active{opacity:.55;}
+#twitterApp .tw-ro-post-header button:focus-visible,#twitterApp .tw-ro-nav button:focus-visible{outline:2px solid #1d9bf0;outline-offset:1px;}
+@media(min-width:680px){#twitterApp .tw-ro-feed{max-width:100%;}}
+
+#twitterApp .tw-ro-dots{border:0;background:none;cursor:pointer;text-align:center;}
